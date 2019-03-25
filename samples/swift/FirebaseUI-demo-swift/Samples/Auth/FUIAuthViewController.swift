@@ -37,7 +37,6 @@ enum Providers: Int, RawRepresentable {
   case Email = 0
   case Google
   case Facebook
-  case Twitter
   case Phone
 }
 
@@ -83,9 +82,6 @@ class FUIAuthViewController: UITableViewController {
                              animated: false,
                              scrollPosition: .none)
     self.tableView.selectRow(at: IndexPath(row: Providers.Facebook.rawValue, section: UISections.Providers.rawValue),
-                             animated: false,
-                             scrollPosition: .none)
-    self.tableView.selectRow(at: IndexPath(row: Providers.Twitter.rawValue, section: UISections.Providers.rawValue),
                              animated: false,
                              scrollPosition: .none)
     self.tableView.selectRow(at: IndexPath(row: Providers.Phone.rawValue, section: UISections.Providers.rawValue),
@@ -281,8 +277,6 @@ class FUIAuthViewController: UITableViewController {
                                                                              kGoogleUserInfoEmailScope,
                                                                              kGoogleUserInfoProfileScope])
               : FUIGoogleAuth()
-          case Providers.Twitter.rawValue:
-            provider = FUITwitterAuth()
           case Providers.Facebook.rawValue:
             provider = self.customScopesSwitch.isOn ? FUIFacebookAuth(permissions: ["email",
                                                                                     "user_friends",

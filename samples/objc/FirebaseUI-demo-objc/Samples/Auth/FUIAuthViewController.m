@@ -41,7 +41,6 @@ NS_ENUM(NSUInteger, FIRProviders) {
   kIDPEmail = 0,
   kIDPGoogle,
   kIDPFacebook,
-  kIDPTwitter,
   kIDPPhone,
   kIDPAnonymous,
   kIDPMicrosoft
@@ -110,10 +109,6 @@ static NSString *const kFirebasePrivacyPolicy = @"https://firebase.google.com/su
                                                           inSection:kSectionsProviders]
                               animated:NO
                         scrollPosition:UITableViewScrollPositionNone];
-  [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:kIDPTwitter
-                                                          inSection:kSectionsProviders]
-                              animated:NO
-                        scrollPosition:UITableViewScrollPositionNone];
   [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:kIDPPhone
                                                           inSection:kSectionsProviders]
                               animated:NO
@@ -126,13 +121,6 @@ static NSString *const kFirebasePrivacyPolicy = @"https://firebase.google.com/su
                                                           inSection:kSectionsProviders]
                               animated:NO
                         scrollPosition:UITableViewScrollPositionNone];
-  // Disable twitter provider if token is not set.
-  if (!kTwitterConsumerKey.length || !kTwitterConsumerSecret.length) {
-    NSIndexPath *twitterRow = [NSIndexPath indexPathForRow:kIDPTwitter
-                                                 inSection:kSectionsProviders];
-    [self tableView:self.tableView cellForRowAtIndexPath:twitterRow].userInteractionEnabled = NO;
-    [self.tableView deselectRowAtIndexPath:twitterRow animated:NO];
-  }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -405,9 +393,6 @@ static NSString *const kFirebasePrivacyPolicy = @"https://firebase.google.com/su
                                                                                       @"user_friends",
                                                                                       @"ads_read"]]
                                      :[[FUIFacebookAuth alloc] init];
-          break;
-        case kIDPTwitter:
-          provider = [[FUITwitterAuth alloc] init];
           break;
         case kIDPPhone:
           provider = [[FUIPhoneAuth alloc] initWithAuthUI:[FUIAuth defaultAuthUI]];
