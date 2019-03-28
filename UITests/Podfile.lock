@@ -11,92 +11,93 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.2):
     - BoringSSL-GRPC/Interface (= 0.0.2)
   - BoringSSL-GRPC/Interface (0.0.2)
-  - FBSDKCoreKit (4.41.0):
+  - FBSDKCoreKit (4.42.0):
     - Bolts (~> 1.9)
-  - FBSDKLoginKit (4.41.0):
+  - FBSDKLoginKit (4.42.0):
     - FBSDKCoreKit
-  - Firebase/Auth (5.18.0):
+  - Firebase/Auth (5.19.0):
     - Firebase/CoreOnly
-    - FirebaseAuth (= 5.4.0)
-  - Firebase/CoreOnly (5.18.0):
-    - FirebaseCore (= 5.3.1)
-  - Firebase/Database (5.18.0):
+    - FirebaseAuth (= 5.4.1)
+  - Firebase/CoreOnly (5.19.0):
+    - FirebaseCore (= 5.4.0)
+  - Firebase/Database (5.19.0):
     - Firebase/CoreOnly
-    - FirebaseDatabase (= 5.1.0)
-  - Firebase/Firestore (5.18.0):
+    - FirebaseDatabase (= 5.1.1)
+  - Firebase/Firestore (5.19.0):
     - Firebase/CoreOnly
-    - FirebaseFirestore (= 1.0.2)
-  - Firebase/Storage (5.18.0):
+    - FirebaseFirestore (= 1.1.0)
+  - Firebase/Storage (5.19.0):
     - Firebase/CoreOnly
-    - FirebaseStorage (= 3.1.0)
-  - FirebaseAuth (5.4.0):
+    - FirebaseStorage (= 3.1.1)
+  - FirebaseAuth (5.4.1):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
     - GoogleUtilities/Environment (~> 5.2)
     - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseAuthInterop (1.0.0)
-  - FirebaseCore (5.3.1):
+  - FirebaseCore (5.4.0):
+    - GoogleUtilities/Environment (~> 5.2)
     - GoogleUtilities/Logger (~> 5.2)
-  - FirebaseDatabase (5.1.0):
+  - FirebaseDatabase (5.1.1):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
     - leveldb-library (~> 1.18)
-  - FirebaseFirestore (1.0.2):
+  - FirebaseFirestore (1.1.0):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
-    - FirebaseFirestore/abseil-cpp (= 1.0.2)
+    - FirebaseFirestore/abseil-cpp (= 1.1.0)
     - "gRPC-C++ (= 0.0.6)"
     - leveldb-library (~> 1.20)
     - nanopb (~> 0.3.901)
     - Protobuf (~> 3.1)
-  - FirebaseFirestore/abseil-cpp (1.0.2):
+  - FirebaseFirestore/abseil-cpp (1.1.0):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
     - "gRPC-C++ (= 0.0.6)"
     - leveldb-library (~> 1.20)
     - nanopb (~> 0.3.901)
     - Protobuf (~> 3.1)
-  - FirebaseStorage (3.1.0):
+  - FirebaseStorage (3.1.1):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseUI (6.1.1):
-    - FirebaseUI/Anonymous (= 6.1.1)
-    - FirebaseUI/Auth (= 6.1.1)
-    - FirebaseUI/Database (= 6.1.1)
-    - FirebaseUI/Email (= 6.1.1)
-    - FirebaseUI/Facebook (= 6.1.1)
-    - FirebaseUI/Firestore (= 6.1.1)
-    - FirebaseUI/Google (= 6.1.1)
-    - FirebaseUI/OAuth (= 6.1.1)
-    - FirebaseUI/Phone (= 6.1.1)
-    - FirebaseUI/Storage (= 6.1.1)
-    - FirebaseUI/Twitter (= 6.1.1)
-  - FirebaseUI/Anonymous (6.1.1):
+  - FirebaseUI (6.2.1):
+    - FirebaseUI/Anonymous (= 6.2.1)
+    - FirebaseUI/Auth (= 6.2.1)
+    - FirebaseUI/Database (= 6.2.1)
+    - FirebaseUI/Email (= 6.2.1)
+    - FirebaseUI/Facebook (= 6.2.1)
+    - FirebaseUI/Firestore (= 6.2.1)
+    - FirebaseUI/Google (= 6.2.1)
+    - FirebaseUI/OAuth (= 6.2.1)
+    - FirebaseUI/Phone (= 6.2.1)
+    - FirebaseUI/Storage (= 6.2.1)
+    - FirebaseUI/Twitter (= 6.2.1)
+  - FirebaseUI/Anonymous (6.2.1):
     - FirebaseUI/Auth
-  - FirebaseUI/Auth (6.1.1):
-    - Firebase/Auth (~> 5.0)
+  - FirebaseUI/Auth (6.2.1):
+    - Firebase/Auth (~> 5.4)
     - GoogleUtilities/UserDefaults
-  - FirebaseUI/Database (6.1.1):
+  - FirebaseUI/Database (6.2.1):
     - Firebase/Database (~> 5.0)
-  - FirebaseUI/Email (6.1.1):
+  - FirebaseUI/Email (6.2.1):
     - FirebaseUI/Auth
-  - FirebaseUI/Facebook (6.1.1):
+  - FirebaseUI/Facebook (6.2.1):
     - FBSDKLoginKit (~> 4.35)
     - FirebaseUI/Auth
-  - FirebaseUI/Firestore (6.1.1):
+  - FirebaseUI/Firestore (6.2.1):
     - Firebase/Firestore
-  - FirebaseUI/Google (6.1.1):
+  - FirebaseUI/Google (6.2.1):
     - FirebaseUI/Auth
     - GoogleSignIn (~> 4.0)
-  - FirebaseUI/OAuth (6.1.1):
+  - FirebaseUI/OAuth (6.2.1):
     - FirebaseUI/Auth
-  - FirebaseUI/Phone (6.1.1):
+  - FirebaseUI/Phone (6.2.1):
     - FirebaseUI/Auth
-  - FirebaseUI/Storage (6.1.1):
+  - FirebaseUI/Storage (6.2.1):
     - Firebase/Storage (~> 5.0)
     - SDWebImage (~> 4.0)
-  - FirebaseUI/Twitter (6.1.1):
+  - FirebaseUI/Twitter (6.2.1):
     - FirebaseUI/Auth
     - TwitterKit (~> 3.0)
   - GoogleSignIn (4.4.0):
@@ -111,10 +112,10 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.2.0)
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
-  - GoogleUtilities/Environment (5.4.0)
-  - GoogleUtilities/Logger (5.4.0):
+  - GoogleUtilities/Environment (5.5.0)
+  - GoogleUtilities/Logger (5.5.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/UserDefaults (5.4.0):
+  - GoogleUtilities/UserDefaults (5.5.0):
     - GoogleUtilities/Logger
   - "gRPC-C++ (0.0.6)":
     - "gRPC-C++/Implementation (= 0.0.6)"
@@ -186,19 +187,19 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
-  FBSDKCoreKit: 974810fe3806173f3777c68062fa8ed6fa59b59d
-  FBSDKLoginKit: 159a5c2eebe6a0774c3b128f5085128679233d2b
-  Firebase: 02f3281965c075426141a0ce1277e9de6649cab9
-  FirebaseAuth: d85d052354447f30b4b2a805ab91b511458b56a6
+  FBSDKCoreKit: aa42f1c384775f8b075f53a43080474278e9701d
+  FBSDKLoginKit: 373830c68aa48c9e8f0bfed93a3e32d2ca8963a0
+  Firebase: c60d49e9c2630875a96207d15e2affb8364996d1
+  FirebaseAuth: cbb892a66baed025efc179372598941252acf853
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
-  FirebaseCore: 52f851b30e11360f1e67cf04b1edfebf0a47a2d3
-  FirebaseDatabase: 23acb0c53cd4d4070a427b60100b2e4aaa97c45d
-  FirebaseFirestore: ccdaffb8a73c591ff61872b8f7905ad0c237ef50
-  FirebaseStorage: 29075f874c2b3cf61e5221a62c4ceefc809e5412
-  FirebaseUI: fc3584df29e96959d895677274681939fa30dbe5
+  FirebaseCore: 22a79a961c3951ef2f77b67bfbc99e454247b319
+  FirebaseDatabase: 2c15b0ea6f2c6eb5e57413f9d6340f1e50b81ae3
+  FirebaseFirestore: 1531eefe02da66be6860966ac4e2cdac635706e2
+  FirebaseStorage: 6162ef4322502b818d9de0ec552f5226d283de43
+  FirebaseUI: 68cf8bcb7b770c397f13379657268e4193b300d6
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
-  GoogleUtilities: fa768ad04b264be250ee9edf9f378ad006f7a560
+  GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
   "gRPC-C++": e76441995900ac90e9bd98644ab4733f12521edf
   gRPC-Core: 4028031ed2c5267cca0d846c876d8046b1ecb9b6
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
